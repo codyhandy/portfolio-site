@@ -1,7 +1,7 @@
-import Link from "next/link"
+import Link from 'next/link'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { route } from "next/dist/next-server/server/router";
+import { route } from 'next/dist/next-server/server/router'
  
 const NotFound = () => {
     const router = useRouter();
@@ -10,7 +10,7 @@ const NotFound = () => {
         setTimeout(() => {
             //router.go(-1) - redirects back a single page
             router.push('/')
-        }, 5000)
+        }, 4000)
     }, [])
 
     return (

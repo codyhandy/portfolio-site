@@ -1,0 +1,9 @@
+@use 'colors';
+@use 'mixins';
+
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+    color: colors.$font-white;
+    background-color: colors.$bg-color;
+}

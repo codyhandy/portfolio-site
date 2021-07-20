@@ -1,0 +1,13 @@
+@use 'reset';
+@use 'colors';
+@use 'mixins';
+@use 'base';
+
+.navigation {
+    @include mixins.flex-between;
+
+    .nav-pages {
+        @include mixins.flex-between;
+        width: 25%;
+    }
+}
