@@ -1,7 +1,8 @@
-[
+{
+    "Project":
     {
         "id": 1,
-        "project": "Stock Ticker App",
+        "name": "Stock Ticker App",
         "description": "Uses API calls to get the previous days data for the selected stock"
     }
-]
+}
