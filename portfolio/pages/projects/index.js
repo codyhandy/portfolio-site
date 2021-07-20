@@ -19,8 +19,10 @@ const Projects = () => {
             <Head>
                 <title>Cody Handy | Projects</title>
             </Head>
-            <div>
-                <h1>All Projects</h1>
+            
+            <h1>All Projects</h1>
+            <div className="projects">
+
             </div>
         </>
      );
