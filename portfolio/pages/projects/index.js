@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 // export const getStaticProps = async () => {
     
-//     const response = await fetch('link to JSON endpoint');
+//     const response = await fetch('http://www.codyhandy.ca/project-test.json');
 //     const data = await response.json();
 
 //     return {
@@ -13,16 +13,20 @@ import Head from 'next/head'
 //     }
 // }
 
-const Projects = () => {
+const Projects = ({ projects }) => {
     return ( 
         <>
             <Head>
                 <title>Cody Handy | Projects</title>
             </Head>
-            
-            <h1>All Projects</h1>
-            <div className="projects">
 
+            <h1>All Projects</h1>
+            <div className="">
+                {/* {projects.map(project => (
+                    <div key={project.id}>
+                        <h3>{ project.name }</h3>
+                    </div>
+                ))} */}
             </div>
         </>
      );

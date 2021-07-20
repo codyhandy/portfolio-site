@@ -1,9 +1,35 @@
 @use 'colors';
 @use 'mixins';
 
+//variables
+$max-width: 1400px;
+
+
+// widely used styles
 body {
+    max-width: $max-width;
     margin: 0 auto;
-    max-width: 1400px;
     color: colors.$font-white;
     background-color: colors.$bg-color;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-weight: 600
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+.flex-container {
+    @include mixins.flex-between;
 }

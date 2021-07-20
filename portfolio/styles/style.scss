@@ -8,6 +8,48 @@
 
     .nav-pages {
         @include mixins.flex-between;
-        width: 25%;
+        width: 300px;
+
+        p {
+            color: colors.$sunrise-alt;
+        }
+
+        a {
+            &:hover{ color: colors.$sunrise-alt; } 
+        }
+    }
+
+    .logo {
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
+
+.name {
+    margin: 2rem 0;
+
+    h1 {
+        margin: 0;
+        animation: flow 5s ease-in-out infinite;
+        background: linear-gradient(45deg, colors.$sunset, colors.$sunrise);
+        background-clip: text;
+        color: transparent;
+        line-height: 1.2;
+    }
+}
+
+.bio {
+    width: 40%;
+    max-width: 600px;
+}
+
+footer {
+    // position: absolute;
+    // bottom: 0;
+
+    p {
+        text-align: center;
+    }
+}
+

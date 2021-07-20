@@ -2,7 +2,7 @@
 
 
 // export const getStaticPaths = async () => {
-//     const response = await fetch('json endpoint');
+//     const response = await fetch('http://www.codyhandy.ca/project-test.json');
 //     const data = await response.json();
 
 //     //maps the id of each project to a path, then returns the whole object
@@ -20,7 +20,7 @@
 
 // export const getStaticProps = async (context) => {
 //     const id = context.params.id;
-//     const response = await fetch('json endpoint' + id);
+//     const response = await fetch('http://www.codyhandy.ca/project-test.json/' + id);
 //     const data = await response.json();
 
 //     return {
@@ -31,7 +31,7 @@
 // const Details = ({ project }) => {
 //     return (
 //         <div>
-//             <h1>{ project.name }</h1>
+//             <h1>Details Page - { project.name }</h1>
 //             <p>{ project.description }</p>
 //         </div>
 //     );

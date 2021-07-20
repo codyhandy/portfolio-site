@@ -1,8 +1,0 @@
-{
-    "Project":
-    {
-        "id": 1,
-        "name": "Stock Ticker App",
-        "description": "Uses API calls to get the previous days data for the selected stock"
-    }
-}
