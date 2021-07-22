@@ -1,35 +1,47 @@
 @use 'colors';
 @use 'mixins';
 
+@import url(//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700);
+
 //variables
 $max-width: 1400px;
 
 
 // widely used styles
+html {
+    font-size: 62.5%;
+}
+
 body {
-    max-width: $max-width;
-    margin: 0 auto;
     color: colors.$font-white;
     background-color: colors.$bg-color;
-    padding: 1rem 2rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    p { letter-spacing: 0.5px; }
+    font-size: 1.8rem;
+    height: 100%;
+}
+
+.wrapper {
+   padding: 1rem 2rem; 
+   max-width: $max-width;
+   margin: 0 auto;
 }
 
 h1, h2, h3 {
-    font-weight: 600
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 10rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
-.flex-container {
-    @include mixins.flex-between;
+.wrapper {
+    min-height: calc(100vh - 12.1rem);
 }

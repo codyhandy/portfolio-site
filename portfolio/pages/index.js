@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <title>Cody Handy</title>
       </Head>
       <div className="flex-container">
-        <div>
+        <div className="banner">
           <div className="name">
             <h1 className="">Cody</h1>
             <h1 className="">Handy</h1>
@@ -19,6 +20,7 @@ export default function Home() {
 
         <div className="bio">
           <p>I build websites! I create custom mobile-friendly websites to suit your needs, whether it is a simple single page design, or a more complex site that you would like to update yourself. I can help with creating your vision. </p>
+          <Link href="/projects"><a>View My Work</a></Link>
         </div>
         
       </div>
