@@ -1,7 +1,7 @@
 // base colors
 $bg-color: #373133;
 $font-white: #f6f6f6;
-$font-hover: #9f9f9f;
+$font-hover: #e0604b;
 
 // accent colors
 $sunrise: #fffe00;
@@ -13,3 +13,6 @@ $sunset-alt: #76026b;
 
 $midday: #e0604b;
 $midday-alt: #a03056;
+
+$gradient: linear-gradient(45deg, $sunset, $midday, $sunrise);
+$gradient-alt: linear-gradient(45deg, $sunset-alt, $midday-alt, $sunrise-alt);

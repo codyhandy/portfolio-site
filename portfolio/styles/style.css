@@ -363,11 +363,8 @@ body {
   background-color: #373133;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  font-size: 1.8rem;
   height: 100%;
-}
-body p {
-  letter-spacing: 0.5px;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
 }
 
 .wrapper {
@@ -378,18 +375,24 @@ body p {
 
 h1, h2, h3 {
   font-weight: 700;
+  margin: 0;
+}
+
+p {
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: clamp(8rem, 10vw, 10rem);
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 4vw, 4rem);
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 .wrapper {
@@ -407,10 +410,12 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  width: 400px;
+  width: 300px;
 }
 .navigation .nav-pages p {
   color: #b40a6a;
+  font-weight: 900;
+  font-size: 2rem;
 }
 .navigation .nav-pages a {
   padding: 1rem;
@@ -418,7 +423,7 @@ h3 {
   font-weight: 500;
 }
 .navigation .nav-pages a:hover {
-  color: #ff8f0a;
+  color: #e0604b;
 }
 .navigation .logo {
   height: 100px;
@@ -430,7 +435,7 @@ h3 {
 }
 
 .name {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 .name h1 {
   margin: 0;
@@ -451,10 +456,64 @@ h3 {
 
 .banner {
   text-align: center;
+  margin-bottom: 8rem;
 }
 
 .bio {
   max-width: 600px;
+}
+.bio .action-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+.bio .action-links > div {
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bio .action-links > div .title {
+  font-weight: 700;
+}
+.bio .action-links > div p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+}
+.bio .action-links > div:hover {
+  cursor: pointer;
+}
+.bio .action-links > div:hover p {
+  opacity: 1;
+}
+.bio .action-links .circle {
+  border: 4px solid #e0604b;
+  animation: colorChange 4s infinite alternate-reverse;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+.bio .action-links .circle svg {
+  height: 4rem;
 }
 
 footer {
@@ -485,15 +544,42 @@ footer ul svg {
   height: 40px;
 }
 footer ul svg:hover {
-  fill: #9f9f9f;
+  fill: #e0604b;
 }
 footer .gradient {
   height: 1.35rem;
   width: 100%;
-  background: linear-gradient(45deg, #b40a6a, #fffe00);
+  background: linear-gradient(45deg, #b40a6a, #e0604b, #fffe00);
 }
 
-@media only screen and (min-width: 600px) {
+.projects-grid {
+  display: grid;
+  grid-gap: 2rem;
+}
+.projects-grid .card h2 {
+  padding: 2rem;
+  text-align: center;
+}
+.projects-grid .card > div {
+  border: 4px solid #373133;
+}
+.projects-grid .card:hover {
+  cursor: pointer;
+}
+.projects-grid .card:hover > div {
+  border: 4px solid #e0604b;
+}
+
+@media only screen and (min-width: 450px) {
+  .navigation .nav-pages {
+    width: 400px;
+  }
+
+  .bio .action-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 700px) {
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -525,6 +611,19 @@ footer .gradient {
     -ms-flex-item-align: center;
         align-self: center;
   }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .bio .action-links > div p {
+    opacity: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @-webkit-keyframes animatedText {
   from {
@@ -540,6 +639,28 @@ footer .gradient {
   }
   to {
     background-position: 100%;
+  }
+}
+@-webkit-keyframes colorChange {
+  0% {
+    border: 4px solid #b40a6a;
+  }
+  50% {
+    border: 4px solid #e0604b;
+  }
+  100% {
+    border: 4px solid #fffe00;
+  }
+}
+@keyframes colorChange {
+  0% {
+    border: 4px solid #b40a6a;
+  }
+  50% {
+    border: 4px solid #e0604b;
+  }
+  100% {
+    border: 4px solid #fffe00;
   }
 }
 /*# sourceMappingURL=style.css.map */
