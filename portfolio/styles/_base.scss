@@ -37,16 +37,33 @@ p {
     margin: 0;
 }
 
+
+
 h1 {
-    font-size: clamp(8rem, 10vw, 10rem);
+    font-size: clamp(5rem, 7vw, 7rem);
+    margin: 4rem 0;
+    text-align: center;
 }
+
+.name {
+    h1 {
+      font-size: clamp(8rem, 10vw, 10rem);
+      margin: 0;
+    }
+}
+
 h2 {
     font-size: clamp(3rem, 4vw, 4rem);
 }
+
 h3 {
     font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 .wrapper {
     min-height: calc(100vh - 12.1rem);
+}
+
+@media only screen and (min-width: 700px) {
+    h1 { text-align: left; }
 }

@@ -90,6 +90,9 @@
                 
                 .circle {
                     background-color: colors.$bg-color-light;
+                    svg {
+                        height: 4.5rem;
+                    }
                 }
             }
         }
@@ -146,9 +149,12 @@ footer {
     }
 }
 
+// ===============     projects page     ===============
+
+
 .projects-grid {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     
     .card {
 
@@ -172,6 +178,27 @@ footer {
     }
 }
 
+
+// ===============     contacts page     ===============
+.contact-info {
+    width: 350px;
+    margin: 0 auto;
+    font-size: clamp(1.8rem, 2vw, 2rem);
+
+    >div{
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+    
+
+        svg {
+            height: 3.5rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+
 @media only screen and (min-width: 450px) {
     .navigation {
         .nav-pages {
@@ -182,6 +209,8 @@ footer {
     .bio .action-links {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    
 }
 
 @media only screen and (min-width: 700px) {
@@ -205,13 +234,18 @@ footer {
         }
 
         .bio, 
-        .banner {
+        .banner,
+        .contact-info {
             align-self: center;
         }
     }
 
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-info {
+        width: 100%;
     }
 }
 

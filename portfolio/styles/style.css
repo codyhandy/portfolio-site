@@ -354,6 +354,14 @@ ul {
   padding: 0;
 }
 
+input {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -500,6 +508,9 @@ h3 {
 .bio .action-links .card:hover .circle {
   background-color: #50474a;
 }
+.bio .action-links .card:hover .circle svg {
+  height: 4.5rem;
+}
 .bio .action-links .circle {
   border: 4px solid #e0604b;
   animation: colorChange 4s infinite alternate-reverse;
@@ -565,7 +576,7 @@ footer .gradient {
 
 .projects-grid {
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
 }
 .projects-grid .card h2 {
   padding: 2rem;
@@ -581,6 +592,25 @@ footer .gradient {
 }
 .projects-grid .card:hover > div {
   border: 4px solid #e0604b;
+}
+
+.contact-info {
+  width: 350px;
+  margin: 0 auto;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+}
+.contact-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+.contact-info > div svg {
+  height: 3.5rem;
+  margin-right: 1rem;
 }
 
 @media only screen and (min-width: 450px) {
@@ -620,13 +650,18 @@ footer .gradient {
     text-align: left;
   }
   .flex-container .bio,
-.flex-container .banner {
+.flex-container .banner,
+.flex-container .contact-info {
     -ms-flex-item-align: center;
         align-self: center;
   }
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1000px) {

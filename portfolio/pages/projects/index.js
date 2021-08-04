@@ -31,11 +31,11 @@ const Projects = ({ projects }) => {
 
                 <div className="card">
                     <Image src="/stockticker.jpg" alt="Stock Ticker Example" height={300} width={600} />
-                    <h2>Project example</h2>
+                    <h2>React Stock Ticker</h2>
                 </div>
                 <div className="card">
                 <Image src="/st-albert-furthered.jpg" alt="St. Albert Furthered" height={300} width={600} />
-                    <h2>Project example</h2>
+                    <h2>St. Albert Further Education</h2>
                 </div>
             </div>
         </>
