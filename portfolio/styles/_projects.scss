@@ -1,0 +1,74 @@
+@use 'reset';
+@use 'colors';
+@use 'mixins';
+@use 'base';
+
+.projects-grid {
+    display: grid;
+    grid-gap: 3rem;
+    
+    .card {
+
+        h2 {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        > div {
+            border: 5px solid colors.$bg-color;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            > div {
+                border: 5px solid colors.$midday;
+            }
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    justify-content: center;
+
+    // targets only the '|' in between the skills 
+    p:nth-child(2n) {
+        margin: 0 2rem;
+        color: colors.$sunset;
+    }
+}
+
+.flex-container.projects {
+    >div {
+        align-self: center;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+.link {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid colors.$midday;
+    animation: colorChange 4s infinite alternate-reverse;
+    margin: 4rem auto;
+    padding: 1rem;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: colors.$bg-color-light;
+        font-size: 2.2rem;
+    }
+}

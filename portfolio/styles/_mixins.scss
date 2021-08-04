@@ -6,8 +6,14 @@
     align-items: center;
 }
 
+@mixin flex-grid-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
 @mixin flex-grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
 }

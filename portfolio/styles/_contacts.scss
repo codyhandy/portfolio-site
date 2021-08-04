@@ -1,0 +1,24 @@
+@use 'reset';
+@use 'colors';
+@use 'mixins';
+@use 'base';
+
+// ===============     contacts page     ===============
+.contact-info {
+    width: 350px;
+    margin: 0 auto;
+    font-size: clamp(1.8rem, 2vw, 2rem);
+
+    >div{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    
+
+        svg {
+            height: 3.5rem;
+            margin-right: 1rem;
+        }
+    }
+}

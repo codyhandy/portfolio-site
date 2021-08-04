@@ -2,15 +2,23 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <Head>
         <title>Cody Handy</title>
       </Head>
-      <div className="flex-container">
-        <div className="banner">
-          <div className="name">
+      <div className="flex-container main"  >
+        <div className="banner" data-aos="fade-right">
+          <div className="name" >
             <h1 className="">Cody</h1>
             <h1 className="">Handy</h1>
           </div>
@@ -18,11 +26,9 @@ export default function Home() {
           <h2 className="">Web Developer</h2>
         </div>
 
-        <div className="bio">
+        <div className="bio" data-aos="fade-left">
           <p>I build websites! I create custom mobile-friendly websites to suit your needs, whether it is a simple single page design, or a more complex site that you would like to update yourself. I can help with creating your vision. </p>
-          {/* <nav>
-            <Link href="/projects"><a>View My Work</a></Link>
-          </nav> */}
+
           <div className="action-links">
             
             <a className="card">
@@ -46,15 +52,17 @@ export default function Home() {
               </a>
             </Link>
 
-            <div className="card">
-              <div className="circle">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              </div>
-              <p className="title">Digital Art</p>
-              <p>(Coming Soon)</p>
-            </div>
+            <Link href="/about">
+              <a className="card">
+                <div className="circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <p className="title">About Me</p>
+              </a>
+            </Link>
+            
           </div> {/* end of the action links */}
           
         </div> {/* end of the bio */}

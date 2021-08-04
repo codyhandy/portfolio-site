@@ -8,9 +8,9 @@ const Navbar = () => {
                 <Link href="/"><a><Image className="" src="/logo.svg" width={100} height={100} /></a></Link>
             </div>
             <div className="nav-pages">
-                <Link href="/"><a>Home</a></Link>
-                <p>|</p>
                 <Link href="/projects"><a>Projects</a></Link> 
+                <p>|</p>
+                <Link href="/about"><a>About</a></Link>
                 <p>|</p>
                 <Link href="/contact"><a>Contact</a></Link> 
             </div>

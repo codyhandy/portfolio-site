@@ -1,0 +1,37 @@
+@use 'reset';
+@use 'colors';
+@use 'mixins';
+@use 'base';
+
+.navigation {
+    .nav-pages {
+        @include mixins.flex-between;
+        margin: 0 auto;
+        width: 300px;
+
+        p {
+            color: colors.$sunset;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+        a {
+            padding: 1rem;
+            font-size: clamp(1.8rem, 3vw, 2.2rem);
+            font-weight: 600;
+            transition: 0.5s;
+            letter-spacing: 1px;
+
+            &:hover{ color: colors.$font-hover; } 
+        }
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

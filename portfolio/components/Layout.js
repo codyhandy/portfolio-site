@@ -3,15 +3,15 @@ import Navbar from "./navbar"
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <main>
             <div className="wrapper">
                <Navbar />
                 <div className="">
-                { children } 
+                    { children } 
                 </div>  
             </div>
             <Footer />
-        </div>
+        </main>
 
     );
 }

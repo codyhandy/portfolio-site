@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-   padding: 1rem 2rem; 
+   padding: 1rem; 
    max-width: $max-width;
    margin: 0 auto;
 }
@@ -43,6 +43,7 @@ h1 {
     font-size: clamp(5rem, 7vw, 7rem);
     margin: 4rem 0;
     text-align: center;
+    letter-spacing: 1.5px;
 }
 
 .name {
@@ -54,6 +55,7 @@ h1 {
 
 h2 {
     font-size: clamp(3rem, 4vw, 4rem);
+    letter-spacing: 1px;
 }
 
 h3 {

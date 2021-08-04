@@ -1,0 +1,19 @@
+@use 'reset';
+@use 'colors';
+@use 'mixins';
+@use 'base';
+
+@keyframes animatedText{
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+
+@keyframes colorChange {
+    0% { border: 4px solid colors.$sunset; }
+    50% { border: 4px solid colors.$midday; }
+    100% { border: 4px solid colors.$sunrise; }
+}
