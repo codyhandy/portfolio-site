@@ -27,18 +27,19 @@ export default function Home() {
         </div>
 
         <div className="bio" data-aos="fade-left">
-          <p>I build websites! I create custom mobile-friendly websites to suit your needs, whether it is a simple single page design, or a more complex site that you would like to update yourself. I can help with creating your vision. </p>
+          <p>I'm a web developer with a primary focus on front-end development, although I am open to other projects and opportunities that will expand my skillset. Currently I am most interested in the creation of web applications.</p>
+
+          <p>If you are looking for helping creating a website then you have come to the right place. I can build mobile-friendly websites that are tailored to your needs.</p>
 
           <div className="action-links">
             
-            <a className="card">
+            <a className="card" href="/resume-cody-handy.pdf" download>
               <div className="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg> 
               </div>
-              <p className="title">Download</p>
-              <p>CV / Resume</p>
+              <p className="title">Download CV</p>
             </a>
 
             <Link href="/projects">
@@ -66,7 +67,7 @@ export default function Home() {
           </div> {/* end of the action links */}
           
         </div> {/* end of the bio */}
-        
+
       </div> {/* end of the main content */}
     </>
   )

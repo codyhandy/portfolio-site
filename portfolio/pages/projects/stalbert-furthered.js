@@ -15,26 +15,26 @@ const Ticker = () => {
     return (
         <>
             <Head>
-                <title>Projects | Stock Ticker</title>
+                <title>Projects | St. Albert Further Ed</title>
             </Head>
 
-            <h1 data-aos="fade-left">React Stock Ticker</h1>
+            <h1 data-aos="fade-left">St. Albert Further Education</h1>
 
             <div className="skills" data-aos="fade-left">
-                <p>React</p>
+                <p>WordPress</p>
                 <p>/</p>
-                <p>APIs</p>
+                <p>PHP</p>
                 <p>/</p>
-                <p>Bootstrap</p>
+                <p>Working in a team</p>
             </div>
 
             <div className="flex-container projects" data-aos="fade-up">
                 <div>
-                    <p>A simple web application built using the React JavaScript library. It allows the user to enter a stock that they want the information for, then the application uses API calls to the get the previous days trading information for the selected stock. </p>
-                    <p>The user can also save a number of stocks, the information from that stock is then saved into a store. The styling is very simple yet functional, and was created using Bootstrap 4.</p>
+                    <p>A full custom theme that was made for a client as the final project of my NAIT education. Worked in a small team in order to bring the clients vision to life.</p>
+                    <p>My responsibilities with the site involved organizing how the content would be organized, and how that would be coded through WordPress to ensure that it would be easy to expand upon later.</p>
                 </div>
 
-                <Image src="/stockticker.jpg" alt="Stock Ticker Preview" width={600} height={300} />
+                <Image src="/stalbert-furthered.jpg" alt="Stock Ticker Preview" width={600} height={300} />
             </div>
 
             {/* <div data-aos="fade-up">

@@ -619,6 +619,7 @@ footer .gradient {
   display: -ms-flexbox;
   display: flex;
   font-weight: 600;
+  color: #b3b3b3;
   margin-bottom: 4rem;
   font-size: clamp(1.8rem, 2vw, 2rem);
   -webkit-box-pack: center;
@@ -627,7 +628,7 @@ footer .gradient {
 }
 .skills p:nth-child(2n) {
   margin: 0 2rem;
-  color: #b40a6a;
+  color: #e0604b;
 }
 
 .flex-container.projects > div {
@@ -638,7 +639,7 @@ footer .gradient {
   margin-bottom: 2rem;
 }
 
-.link {
+.view-page {
   font-size: 2rem;
   font-weight: 600;
   width: 10rem;
@@ -659,7 +660,7 @@ footer .gradient {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.link:hover {
+.view-page:hover {
   background-color: #50474a;
   font-size: 2.2rem;
 }

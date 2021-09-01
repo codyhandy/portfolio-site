@@ -32,6 +32,7 @@
 .skills {
     display: flex;
     font-weight: 600;
+    color: colors.$font-light;
     margin-bottom: 4rem;
     font-size: clamp(1.8rem, 2vw, 2rem);
     justify-content: center;
@@ -39,7 +40,7 @@
     // targets only the '|' in between the skills 
     p:nth-child(2n) {
         margin: 0 2rem;
-        color: colors.$sunset;
+        color: colors.$midday;
     }
 }
 
@@ -53,7 +54,7 @@
     }
 }
 
-.link {
+.view-page {
     font-size: 2rem;
     font-weight: 600;
     width: 10rem;

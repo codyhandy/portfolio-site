@@ -44,12 +44,20 @@ const Projects = ({ projects }) => {
                         <h2>React Stock Ticker</h2>
                     </a>
                 </Link>
-                
 
-                <div className="card" data-aos="fade-up">
-                <Image src="/st-albert-furthered.jpg" alt="St. Albert Furthered" height={300} width={600} />
-                    <h2>St. Albert Further Education</h2>
-                </div>
+                <Link href="/projects/stalbert-furthered">
+                    <a className="card" data-aos="fade-up">
+                        <Image src="/stalbert-furthered.jpg" alt="St. Albert Further Ed Example" height={300} width={600} />
+                        <h2>St. Albert Further Education</h2>
+                    </a>
+                </Link>
+
+                <Link href="/projects/app-design">
+                    <a className="card" data-aos="fade-up">
+                        <Image src="/web-app.jpg" alt="Web App Design Example" height={300} width={600} />
+                        <h2>Web Application Prototype</h2>
+                    </a>
+                </Link>
 
             </div>
         </>
