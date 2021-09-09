@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import HeadTitle from '../components/headTitle'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -12,9 +12,7 @@ const Contact = () => {
 
     return ( 
         <>
-            <Head>
-                <title>Cody Handy | Contact</title>
-            </Head>
+            <HeadTitle title='Contact' />
             
             <div className="flex-container main">
                 <div className="banner" data-aos="fade-right">

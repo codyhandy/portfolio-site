@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import HeadTitle from '../../components/headTitle'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -26,9 +26,7 @@ const Projects = ({ projects }) => {
 
     return ( 
         <>
-            <Head>
-                <title>Cody Handy | Projects</title>
-            </Head>
+            <HeadTitle title='Projects' />
 
             <h1 data-aos="fade-left">All Projects</h1>
             <div className="projects-grid">

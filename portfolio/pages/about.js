@@ -1,6 +1,5 @@
-import Head from 'next/head'
 import Image from 'next/image'
-
+import HeadTitle from '../components/headTitle'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
@@ -13,9 +12,7 @@ const About = () => {
 
     return (
         <>
-            <Head>
-                <title>Cody Handy | About</title>
-            </Head>
+            <HeadTitle title='About' />
 
             <h1 data-aos="fade-left">About Me</h1>
             <div className="flex-container about"  data-aos="fade-up">
