@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, disable: 'mobile' });
   }, []);
 
   return (

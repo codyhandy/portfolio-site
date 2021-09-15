@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 const Ticker = () => {
 
     useEffect(() => {
-        AOS.init({ duration: 1000 })
+        AOS.init({ duration: 1000, disable: 'mobile' })
     }, [])
 
     return (
