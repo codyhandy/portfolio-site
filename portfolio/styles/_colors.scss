@@ -1,6 +1,6 @@
 // base colors
 $bg-color: #373133;
-$bg-color-light: #50474a;
+$bg-color-light: #47383d;
 $font-white: #f6f6f6;
 $font-light: #b3b3b3;
 $font-hover: #e0604b;
@@ -18,3 +18,4 @@ $midday-alt: #a03056;
 
 $gradient: linear-gradient(45deg, $sunset, $midday, $sunrise);
 $gradient-alt: linear-gradient(45deg, $sunset-alt, $midday-alt, $sunrise-alt);
+$gradient-BG: linear-gradient(180deg, $bg-color, $bg-color-light);

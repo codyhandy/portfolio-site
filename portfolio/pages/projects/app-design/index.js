@@ -37,11 +37,11 @@ const Ticker = () => {
                 <Image src="/web-app.jpg" alt="Web App Preview" width={600} height={300} />
             </div>
 
-            {/* <div data-aos="fade-up">
+            <div data-aos="fade-up">
                 <Link href="/" >
                     <a className="view-page">View</a>
                 </Link>
-            </div> */}
+            </div>
         </>
     )
 }

@@ -9,11 +9,11 @@
 @mixin flex-grid-column {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 }
 
 @mixin flex-grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 }

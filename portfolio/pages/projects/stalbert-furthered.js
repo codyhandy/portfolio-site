@@ -30,7 +30,7 @@ const Ticker = () => {
 
             <div className="flex-container projects" data-aos="fade-up">
                 <div>
-                    <p>A full custom theme that was made for a client as the final project of my NAIT education. Worked in a small team in order to bring the clients vision to life.</p>
+                    <p>A full custom theme that was made for a client from scratch as the final project of my NAIT education. Worked in a small team in order to bring the clients vision to life.</p>
                     <p>My responsibilities with the site involved organizing how the content would be organized, and how that would be coded through WordPress to ensure that it would be easy to expand upon later.</p>
                 </div>
 
