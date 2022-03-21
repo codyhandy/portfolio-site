@@ -38,9 +38,7 @@ const Ticker = () => {
             </div>
 
             <div data-aos="fade-up">
-                <Link href="/" >
-                    <a className="view-page">View</a>
-                </Link>
+                <a href='https://codyhandy-webapp-design.netlify.app' className="view-page">View</a>
             </div>
         </>
     )
