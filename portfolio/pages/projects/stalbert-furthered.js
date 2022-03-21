@@ -37,11 +37,9 @@ const Ticker = () => {
                 <Image src="/stalbert-furthered.jpg" alt="Stock Ticker Preview" width={600} height={300} />
             </div>
 
-            {/* <div data-aos="fade-up">
-                <Link href="/" >
-                    <a className="view-page">View</a>
-                </Link>
-            </div> */}
+            <div data-aos="fade-up">
+                <a href='https://github.com/codyhandy/stalbertfurthered' className="view-page">View Files</a>
+            </div>
         </>
     )
 }
